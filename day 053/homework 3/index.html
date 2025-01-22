@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Change</title>
+<style>
+  .green { color: green; }
+  .red { color: red; }
+  .yellow { color: yellow; }
+</style>
+</head>
+<body>
+
+<p id="paragraph1">First Paragraph</p>
+<p id="paragraph2">Second Paragraph</p>
+<p id="paragraph3">Third Paragraph</p>
+
+<button onclick="changeColor('paragraph1', 'green')">Make Green</button>
+<button onclick="changeColor('paragraph2', 'red')">Make Red</button>
+<button onclick="changeColor('paragraph3', 'yellow')">Make Yellow</button>
+
+<script>
+function changeColor(paragraphId, color) {
+    var paragraph = document.getElementById(paragraphId);
+    paragraph.style.color = color;
+}
+</script>
+
+</body>
+</html>

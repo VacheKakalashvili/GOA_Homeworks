@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Last Child Text</title>
+</head>
+<body>
+    <div id="container">
+        <p>First Child</p>
+        <p>Second Child</p>
+        <p>Last Child</p>
+    </div>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            const container = document.getElementById('container');
+            const lastChild = container.lastElementChild;
+            lastChild.textContent = 'Text has been changed!';
+        }
+    </script>
+</body>
+</html>

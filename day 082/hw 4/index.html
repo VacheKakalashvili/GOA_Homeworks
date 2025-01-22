@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Element from Prompt</title>
+</head>
+<body>
+    <script>
+        const elementName = prompt("Enter the name of an HTML element (e.g., 'div', 'p', 'span'):");
+
+        if (elementName) {
+            const newElement = document.createElement(elementName);
+
+            newElement.textContent = `This is a new <${elementName}> element added to the page.`;
+
+            document.body.appendChild(newElement);
+        } else {
+            alert("No element name entered. Please refresh the page and try again.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+user_name = input("what's ur name ")
+user_lastname = input("whats ur last name ")
+user_age = int(input("what's ur age "))
+user_motherage = input("what's ur mother's name ")
+user_fatherage = input("whats ur father's name ")
+user_petname = input("what's ur pet's name ")
+print("in 15 years you will be " , user_age + 15)

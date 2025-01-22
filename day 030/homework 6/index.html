@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        p {
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+            form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Goal Oriented Academy</h1>
+    <p>Goal Oriented Aacademy (GOA) არის პროგრამირების აკადემია სადაც ყველანაირ პროგრამირების ენას ისწავლით ზედმიწევნით და სრულად. სწავლა ხდება ონლაინ და ერთმანეთს კვირაში 2-ჯერ ვხვდებით. აქ სწავლობენ ახალგაზრდებიცა და ზრდასრულებიც. GOA-ში ისწავლება პროგრამირება, გრაფიკული დიზაინი, თამაშების დეველოპმენტი, ინგლისური და მათემატიკა. აქ ძალიან მშვიდი გარემოა და მრავალ მეგობარსაც გაიჩენთ. GOA-ში შემოსვლა წარმატებისკენ პირველი ნაბიჯია. </p>
+    <p>თუ კიდევ რაიმე გაინტერესებთ ან გაქვთ კითხვები აქ მოგვწერეთ</p>
+    <form action="process_registration.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

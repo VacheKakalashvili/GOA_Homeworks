@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Content by Class</title>
+</head>
+<body>
+    <h1 class="header">Hello, World 1!</h1>
+    <h1 class="header">Hello, World 2!</h1>
+    <h1 class="header">Hello, World 3!</h1>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            const headers = document.getElementsByClassName('header');
+            for (let i = 0; i < headers.length; i++) {
+                headers[i].textContent = 'Text has been changed!';
+            }
+        }
+    </script>
+</body>
+</html>

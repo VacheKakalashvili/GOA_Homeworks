@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Screen</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+
+  .loader-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .loader {
+    border: 8px solid #0d47a1;
+    border-top: 8px solid #000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loading-text {
+    animation: fade 2s linear infinite;
+    opacity: 0;
+  }
+
+  @keyframes fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <div class="loading-text">Loading...</div>
+</body>
+</html>

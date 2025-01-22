@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Box Styles */
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="process_registration.php" method="post">
+
+        <!-- User Information Box -->
+        <div class="box">
+            <div class="box-header">User Information</div>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" required>
+            <br>
+        </div>
+
+        <!-- Contact Information Box -->
+        <div class="box">
+            <div class="box-header">Contact Information</div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="workPhone">Work Phone:</label>
+            <input type="tel" id="workPhone" name="workPhone" required>
+            <br>
+            <label for="CellPhone">Cell Phone:</label>
+            <input type="tel" id="CellPhone" name="CellPhone" required>
+            <br>
+            <label>Notification Preference:</label>
+            <input type="radio" id="emailNotification" name="notificationPreference" value="Email" checked>
+            <label for="emailNotification">Email</label>
+            <input type="radio" id="smsNotification" name="notificationPreference" value="SMS">
+            <label for="smsNotification">SMS</label>
+        </div>
+
+        <!-- Security Box -->
+        <div class="box">
+            <div class="box-header">Security</div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br>
+        </div>
+
+        <!-- Role Assignment Box -->
+        <div class="box">
+            <div class="box-header">Role Assignment</div>
+            <label for="role">Role Assignment:</label>
+            <select id="role" name="role" required>
+                <option value="ControlsEngineer">Controls Engineer</option>
+                <option value="MaintenanceEngineer">Maintenance Engineer</option>
+                <option value="MaintenanceManager">Maintenance Manager</option>
+                <option value="ProductionManager">Production Manager</option>
+            </select>
+            <br>
+        </div>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>

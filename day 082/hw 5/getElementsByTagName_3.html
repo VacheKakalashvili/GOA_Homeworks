@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide Elements by Tag</title>
+</head>
+<body>
+    <ul>
+        <li>This is item 1.</li>
+        <li>This is item 2.</li>
+        <li>This is item 3.</li>
+    </ul>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            const listItems = document.getElementsByTagName('li');
+            for (let i = 0; i < listItems.length; i++) {
+                if (listItems[i].style.display === 'none') {
+                    listItems[i].style.display = 'block';
+                } else {
+                    listItems[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

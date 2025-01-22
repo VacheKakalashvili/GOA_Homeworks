@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide Elements</title>
+</head>
+<body>
+    <p class="text">This is paragraph 1.</p>
+    <p class="text">This is paragraph 2.</p>
+    <p class="text">This is paragraph 3.</p>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            const paragraphs = document.querySelectorAll('.text');
+            paragraphs.forEach(paragraph => {
+                paragraph.style.display = (paragraph.style.display === 'none') ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

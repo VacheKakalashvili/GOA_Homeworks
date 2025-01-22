@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Next Sibling Text</title>
+</head>
+<body>
+    <div id="container">
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+    </div>
+    <button onclick="changeText()">Change Next Text</button>
+
+    <script>
+        function changeText() {
+            const firstParagraph = document.querySelector('#container p');
+            const nextParagraph = firstParagraph.nextElementSibling;
+            if (nextParagraph) {
+                nextParagraph.textContent = 'The text has been changed!';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse and Print</title>
+</head>
+<body>
+    <h1>Parse and Print</h1>
+
+    <script>
+        function parseAndPrint(element) {
+            const intValue = parseInt(element);
+            const floatValue = parseFloat(element);
+
+            console.log(`Input Element: ${element}`);
+            console.log(`Parsed Integer Value: ${intValue}`);
+            console.log(`Parsed Float Value: ${floatValue}`);
+            console.log('-----------------------------');
+        }
+
+        parseAndPrint(42);
+        parseAndPrint("3.14");
+        parseAndPrint("100px");
+        parseAndPrint("Hello");
+        parseAndPrint(true);
+        parseAndPrint(null);
+        parseAndPrint(undefined);
+    </script>
+</body>
+</html>

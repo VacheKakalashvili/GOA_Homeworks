@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paragraph Rotation</title>
+</head>
+<body>
+
+<p id="firstParagraph">This is the first paragraph.</p>
+<p id="secondParagraph">This is the second paragraph.</p>
+<p id="thirdParagraph">This is the third paragraph.</p>
+
+<button onclick="rotateParagraphs()">Rotate Paragraphs</button>
+
+<script>
+function rotateParagraphs() {
+    var firstText = document.getElementById("firstParagraph").innerText;
+    var secondText = document.getElementById("secondParagraph").innerText;
+    var thirdText = document.getElementById("thirdParagraph").innerText;
+
+    document.getElementById("firstParagraph").innerText = thirdText;
+    document.getElementById("secondParagraph").innerText = firstText;
+    document.getElementById("thirdParagraph").innerText = secondText;
+}
+</script>
+
+</body>
+</html>

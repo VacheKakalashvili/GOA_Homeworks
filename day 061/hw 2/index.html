@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Validator</title>
+</head>
+<body>
+    <h1>Coupon Validator</h1>
+    <form id="couponForm">
+        <label for="couponCode">Coupon Code: </label>
+        <input type="text" id="couponCode" name="couponCode" required>
+        <br><br>
+        <label for="totalAmount">Total Amount: </label>
+        <input type="number" id="totalAmount" name="totalAmount" required>
+        <br><br>
+        <button type="button" onclick="checkCoupon()">Check Coupon</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

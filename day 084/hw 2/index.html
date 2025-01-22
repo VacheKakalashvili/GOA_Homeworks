@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maneuver Block with Arrow Keys</title>
+    <style>
+        /* Style for the container */
+        #container {
+            width: 320px;
+            height: 320px;
+            position: relative;
+            border: 2px solid black;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        /* Style for the moving block */
+        #child-container {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container holding the moving block -->
+    <div id="container">
+        <div id="child-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

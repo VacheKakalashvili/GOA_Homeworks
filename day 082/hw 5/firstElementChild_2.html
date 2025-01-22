@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change First Child Style</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            const parent = document.getElementById('parent');
+            const firstChild = parent.firstElementChild;
+            firstChild.style.backgroundColor = 'blue';
+            firstChild.style.width = '150px';
+            firstChild.style.height = '150px';
+        }
+    </script>
+</body>
+</html>

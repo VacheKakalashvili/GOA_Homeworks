@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Content</title>
+</head>
+<body>
+    <p class="text">Original Paragraph 1</p>
+    <p class="text">Original Paragraph 2</p>
+    <p class="text">Original Paragraph 3</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            const paragraphs = document.querySelectorAll('.text');
+            paragraphs.forEach(paragraph => {
+                paragraph.textContent = 'Text has been changed!';
+            });
+        }
+    </script>
+</body>
+</html>

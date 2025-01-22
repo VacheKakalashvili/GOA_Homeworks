@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Last Child Visibility</title>
+</head>
+<body>
+    <div id="container">
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </div>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            const container = document.getElementById('container');
+            const lastChild = container.lastElementChild;
+            if (lastChild.style.display === 'none') {
+                lastChild.style.display = 'block';
+            } else {
+                lastChild.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

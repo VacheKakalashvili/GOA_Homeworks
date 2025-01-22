@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Range Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            margin: 10px 0;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sum Range Calculator</h1>
+        <input type="number" id="startNumber" placeholder="Enter start number">
+        <input type="number" id="endNumber" placeholder="Enter end number">
+        <br>
+        <button onclick="calculateSum()">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function sumRange(start, end) {
+            let sum = 0;
+            for (let i = start; i <= end; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        function calculateSum() {
+            const startNumber = parseInt(document.getElementById('startNumber').value);
+            const endNumber = parseInt(document.getElementById('endNumber').value);
+
+            if (isNaN(startNumber) || isNaN(endNumber)) {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+                return;
+            }
+
+            const result = sumRange(startNumber, endNumber);
+            document.getElementById('result').innerText = `The sum of numbers from ${startNumber} to ${endNumber} is: ${result}`;
+        }
+    </script>
+</body>
+</html>

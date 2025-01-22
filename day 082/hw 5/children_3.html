@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide Elements</title>
+</head>
+<body>
+    <div id="container">
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+    </div>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            const container = document.getElementById('container');
+            const children = container.children;
+            for (let i = 0; i < children.length; i++) {
+                if (children[i].style.display === 'none') {
+                    children[i].style.display = 'block';
+                } else {
+                    children[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
