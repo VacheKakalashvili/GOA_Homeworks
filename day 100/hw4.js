@@ -4,7 +4,7 @@ function* wordGenerator(word) {
     }
 }
 
-// Example usage:
 const letterGenerator = wordGenerator("example");
-console.log(letterGenerator.next().value); // 'e'
-console.log(letterGenerator.next().value); // 'x'
+console.log(letterGenerator.next().value);
+console.log(letterGenerator.next().value);
+console.log(letterGenerator.next().value);
